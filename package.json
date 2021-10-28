@@ -6,6 +6,9 @@
   "author": {
     "name": "lucassonsinlima"
   },
+  "release": {
+    "branches": ["main"]
+  },
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
