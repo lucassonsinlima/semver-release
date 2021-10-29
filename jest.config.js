@@ -8,5 +8,3 @@ module.exports = {
     '^#/(.*)$': '<rootDir>/tests/unit/$1'
   }
 };
-
-
