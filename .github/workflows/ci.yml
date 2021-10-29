@@ -1,6 +1,10 @@
 name: CI
 
+env:
+  NODE_AUTH_TOKEN: ${{ secrets.NODE_AUTH_TOKEN }}
+
 on: pull_request_target
+
 jobs:
   lint:
     name: Lint
