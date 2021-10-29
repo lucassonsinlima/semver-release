@@ -90,7 +90,7 @@
   "license": "MIT",
   "readme": "ERROR: No README data found!",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/contratadome"
+    "registry": "https://npm.pkg.github.com/lucassonsinlima"
   },
   "repository": {
     "type": "git",
