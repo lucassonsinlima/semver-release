@@ -1,4 +1,6 @@
-const defaultRules = require('@semantic-release/commit-analyzer/lib/default-release-rules.js')
+/* eslint-disable */
+
+const defaultRules = require('@semantic-release/commit-analyzer/lib/default-release-rules')
 
 module.exports = {
   branches: ['main'],
