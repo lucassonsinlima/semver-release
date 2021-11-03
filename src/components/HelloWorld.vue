@@ -3,7 +3,8 @@
     <h1>{{ msg }}</h1>
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, quasi animi esse perspiciatis 
-      aliquam odit? Magni itaque quaerat id consequatur saepe illum libero eveniet similique. Reprehenderit placeat aperiam architecto corporis!
+      aliquam odit? Magni itaque quaerat id consequatur saepe illum libero eveniet similique. 
+      Reprehenderit placeat aperiam architecto corporis!
     </p>
   </div>
 </template>
