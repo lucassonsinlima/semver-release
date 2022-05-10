@@ -9,13 +9,34 @@ module.exports = {
         preset: 'angular',
         releaseRules: [
           ...defaultRules,
+          {
+            type: 'build',
+            scope: 'deps',
+            release: 'patch'
+          },
+          {
+            type: 'chore',
+            scope: 'deps',
+            release: 'patch'
+          },
           { release: 'patch' }
         ],
     }],
     ['@semantic-release/release-notes-generator', {
       preset: 'angular',
-      parserOpts: {
-        noteKeywords: ['chore', 'bump']
+      presetConfig: {
+        types: [
+          {
+            type: 'build',
+            section: 'Dependencies and Other Build Updates',
+            hidden: false
+          },
+          {
+            type: 'chore',
+            section: 'Small changes',
+            hidden: false
+          }
+        ]
       },
       writerOpts: {
         commitsSort: ['subject', 'scope']
