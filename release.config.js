@@ -12,8 +12,15 @@ module.exports = {
           { release: 'patch' }
         ],
     }],
-    '@semantic-release/release-notes-generator',
-    '@semantic-release/npm',
+    ['@semantic-release/release-notes-generator', {
+      preset: 'angular',
+      parserOpts: {
+        noteKeywords: ['chore', 'bump']
+      },
+      writerOpts: {
+        commitsSort: ['subject', 'scope']
+      }
+    }],
     ['@semantic-release/git', {
       assets: [
         'dist/**/*.{js,css}',
@@ -22,6 +29,7 @@ module.exports = {
       ],
       message: 'perf(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}'
     }],
+    '@semantic-release/npm',
     '@semantic-release/github'
   ],
 }
