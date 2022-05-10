@@ -13,7 +13,6 @@ module.exports = {
         ],
     }],
     '@semantic-release/release-notes-generator',
-    '@semantic-release/npm',
     ['@semantic-release/git', {
       assets: [
         'dist/**/*.{js,css}',
@@ -22,6 +21,7 @@ module.exports = {
       ],
       message: 'perf(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}'
     }],
+    '@semantic-release/npm',
     '@semantic-release/github'
   ],
 }
